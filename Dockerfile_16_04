@@ -1,4 +1,8 @@
 FROM ubuntu:15.04
+
+WORKDIR /aosp
+ENV USER root
+
 # 更新阿里源
 COPY sources.list /etc/apt/sources.list
 RUN apt-get clean

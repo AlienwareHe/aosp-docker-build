@@ -1,6 +1,8 @@
 FROM ubuntu:14.04
 
 WORKDIR /aosp
+# 设置环境变量否则编译会失败
+ENV USER root
 
 # 更新阿里源
 COPY sources.list /etc/apt/sources.list
